@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/background_dark"
+    tools:context="lcharlebois.edgeflashlight.FlashLightActivity">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:text="Edge Flashlight"
+        android:layout_marginTop="100dp" />
+
+    <ImageView
+        android:id="@+id/flashlight_img"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:src="@drawable/flashlight_off"
+        android:layout_marginBottom="100dp" />
+
+    </LinearLayout>
