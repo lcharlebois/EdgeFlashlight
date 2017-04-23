@@ -4,27 +4,31 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="@android:color/background_light"
+    android:background="@android:color/background_dark"
     tools:context="lcharlebois.edgeflashlight.FlashLightActivity">
 
     <TextView
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:textColor="@android:color/primary_text_light"
+        android:id="@+id/text"
+        android:layout_width="240dp"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:textSize="26dp"
-        android:textStyle="bold"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:rotation="90"
+        android:singleLine="true"
         android:text="Edge Flashlight"
+        android:textColor="@android:color/primary_text_dark"
         android:layout_marginTop="100dp" />
 
     <ImageView
-        android:id="@+id/flashlight_img"
+        android:id="@+id/edge_flashlight_img"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="3"
-        android:src="@drawable/flashlight_off"
+        android:layout_weight="2"
+        android:src="@drawable/edge_flashlight_off"
         android:layout_marginBottom="100dp" />
 
     </LinearLayout>
