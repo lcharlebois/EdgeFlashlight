@@ -1,10 +1,8 @@
 package lcharlebois.edgeflashlight;
 
-import android.app.Activity;
 import android.content.Context;
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraManager;
-import android.widget.ImageView;
 import android.widget.RemoteViews;
 
 import com.samsung.android.sdk.look.cocktailbar.SlookCocktailManager;
@@ -13,11 +11,12 @@ import com.samsung.android.sdk.look.cocktailbar.SlookCocktailProvider;
 public class CocktailProvider extends SlookCocktailProvider {
 
     private final int VISIBILITY_VISIBLE = 1;
+    private RemoteViews rv;
 
     @Override
     public void onUpdate(Context context, SlookCocktailManager cocktailBarManager, int[] cocktailIds) {
         // create RemoteViews
-        RemoteViews rv = new RemoteViews(context.getPackageName(), R.layout.edge_flash_light);
+        rv = new RemoteViews(context.getPackageName(), R.layout.edge_flash_light);
 
         // update cocktail
         for (int i = 0; i < cocktailIds.length; i++) {
@@ -41,8 +40,7 @@ public class CocktailProvider extends SlookCocktailProvider {
         } catch (CameraAccessException e) {
             e.printStackTrace();
         }
-
-        ImageView flashlightImg = (ImageView)((Activity)context).findViewById(R.id.edge_flashlight_img);
-        flashlightImg.setBackgroundResource(enable ? R.drawable.edge_flashlight_on : R.drawable.edge_flashlight_off);
+        // rv.setTextViewText(R.id.text, "Edge Flashlight " + (enable ? "On" : "Off"));
+        // flashlightImg.setBackgroundResource(enable ? R.drawable.edge_flashlight_on : R.drawable.edge_flashlight_off);
     }
 }

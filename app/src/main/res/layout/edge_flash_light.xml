@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:src="@drawable/edge_flashlight_off"
+        android:src="@drawable/edge_flashlight_on"
         android:layout_marginBottom="100dp" />
 
     </LinearLayout>

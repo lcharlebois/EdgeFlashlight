@@ -15,7 +15,7 @@
         android:layout_weight="1"
         android:textSize="26dp"
         android:textStyle="bold"
-        android:text="Edge Flashlight"
+        android:text="Flashlight On"
         android:layout_marginTop="100dp" />
 
     <ImageView
